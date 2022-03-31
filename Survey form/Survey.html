@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="/survey.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="header">
+      <h1 style="text-align: center">Student's Interest Survey Form</h1>
+      <h4 class="description">
+        <i>Thank you for taking the time to help us improve the record</i>
+      </h4>
+    </div>
+    <form action="#" class="form">
+      <p>Name</p>
+      <input type="text" placeholder="Enter your name" required />
+      <p>Email</p>
+      <input type="email" placeholder="Enter your Email" required />
+      <p>Age (optional)</p>
+      <input type="number" placeholder="Age" />
+      <p>Which option best describes your current role?</p>
+      <select name="role" id="role">
+        <option value="choose" disabled selected value>
+          Select current role
+        </option>
+        <option value="student">Student</option>
+        <option value="Full time job">Full time job</option>
+        <option value="Half time job">Half time job</option>
+        <option value="prefer">Prefer not to say</option>
+        <option value="other">Others</option>
+      </select>
+
+      <div>
+        <p>Would you recommend this Form to a friend?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />
+          Definitely</label
+        >
+        <br />
+        <label>
+          <input
+            name="user-recommend"
+            type="radio"
+            value="Maybe"
+            class="input-radio"
+            checked
+          />
+          Maybe
+        </label>
+        <br />
+        <label>
+          <input
+            name="user-recommend"
+            type="radio"
+            value="NotSure"
+            class="input-radio"
+            checked
+          />
+          Not Sure</label
+        >
+        <br />
+      </div>
+      <br />
+      <div>
+        <p>What would you prefer for Development ?</p>
+        <select name="favorite" id="favorite">
+          <option value="select" disabled selected value>
+            Select an option
+          </option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="Community">Community</option>
+          <option value="Open Source">Open Source</option>
+        </select>
+      </div>
+      <br />
+
+      <div>
+        <p>
+          Which coding Platform you visit most ?<br />
+          <sub>(Check all that apply)</sub>
+        </p>
+        <label
+          ><input type="checkbox" name="Codechef" id="Codechef" /> Codechef</label
+        ><br />
+        <label
+          ><input type="checkbox" name="Codeforces" id="Codeforces" /> Codeforces</label
+        ><br />
+        <label
+          ><input type="checkbox" name="Leetcode" id="Leetcode" /> Leetcode</label
+        ><br />
+        <label
+          ><input
+            type="checkbox"
+            name="Hackerrank"
+            id="Hackerrank"
+          /> Hackerrank</label
+        ><br />
+        <label
+          ><input type="checkbox" name="Hackerearth" id="Hackerearth" /> Hackerearth</label
+        ><br />
+        <label
+          ><input type="checkbox" name="Topcoder" id="Topcoder" /> Topcoder</label
+        ><br />
+        <label><input type="checkbox" name="videos" id="videos" /> Videos Tutorials on Youtube</label
+        ><br />
+        <label
+          ><input type="checkbox" name="gfg" id="gfg" /> GeeksforGeeks</label
+        ><br />
+        <label><input type="checkbox" name="codingmonk" id="codingmonk" /> Coding Monk</label><br />
+        <label><input type="checkbox" name="forum" id="forum" /> Forum</label
+        ><br />
+        <label
+          ><input type="checkbox" name="additional" id="addiotinal" /> Additional
+          Courses</label
+        ><br />
+      </div>
+      <br />
+      <div>
+        <p>Any comments or suggestions ?</p>
+        <label for="text">
+          <textarea
+            name="comments"
+            id="comments"
+            cols="30"
+            rows="5"
+            placeholder="Enter your comment here..."
+            class="input-textarea"
+          ></textarea>
+        </label>
+      </div>
+      <!-- <div><input type="submit" value="submit"></div> -->
+      <div>
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
